@@ -2,7 +2,7 @@
 
 A powerful Model Context Protocol (MCP) server that provides advanced AI-powered tools for document analysis, data interpretation, and content generation. Built with FastMCP and designed for seamless integration with LLM applications and workflows.
 
-## 🌟 Features
+## Features
 
 ### Core Tools
 
@@ -30,7 +30,7 @@ A powerful Model Context Protocol (MCP) server that provides advanced AI-powered
    - Context-aware decision making
    - Token usage tracking and optimization
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 64sqs-mcp/
@@ -63,14 +63,14 @@ A powerful Model Context Protocol (MCP) server that provides advanced AI-powered
 └── start_server.sh               # Server startup script
 ```
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.12 or higher
 - Poetry (Python dependency manager)
 - OpenAI API key or compatible LLM API
 - AWS credentials (for S3 storage, optional)
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -243,7 +243,7 @@ The agent will:
 3. Build context across tool executions
 4. Generate the final deliverable
 
-## 🔧 Configuration
+## Configuration
 
 ### Server Configuration
 
@@ -265,7 +265,7 @@ Each tool has its own `config.py` file:
 
 Configure API keys, model settings, and other parameters as needed.
 
-## 🌐 Exposing the Server
+## Exposing the Server
 
 ### Using ngrok (Quick Setup)
 
@@ -288,7 +288,7 @@ sudo ln -s /etc/nginx/sites-available/mcp-server /etc/nginx/sites-enabled/
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
-## 📊 Output Files
+## Output Files
 
 All tools support `save_outputs` parameter which saves results to the `temp/` directory:
 
@@ -334,7 +334,7 @@ analyzer = DocsAnalyzer(
 result = analyzer.analyze_files()
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 Key dependencies (see `pyproject.toml` for complete list):
 
@@ -346,7 +346,7 @@ Key dependencies (see `pyproject.toml` for complete list):
 - **python-docx**: Word document generation
 - **Uvicorn**: ASGI server
 
-## ⚠️ Important Notes
+## Important Notes
 
 ### Resource Intensive Operations
 
@@ -367,7 +367,7 @@ Key dependencies (see `pyproject.toml` for complete list):
 - **Data Interpreter**: Cannot identify broad themes in text data; requires quantifiable fields
 - **Content Writer**: Quality depends on the richness of input source material
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 
@@ -376,15 +376,15 @@ Contributions are welcome! Please:
 3. Make your changes with clear commit messages
 4. Submit a pull request
 
-## 📄 License
+## License
 
 [Add your license information here]
 
-## 👥 Authors
+## Authors
 
 - **rwik04** - rwik04@kgpian.iitkgp.ac.in
 
-## 🆘 Support
+## Support
 
 For issues, questions, or feature requests, please [open an issue](https://github.com/your-repo/issues) on GitHub.
 
